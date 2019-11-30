@@ -1,0 +1,129 @@
+@import './variables.scss';
+@import './../helpers/fonts.scss';
+
+#content {
+  .slider {
+    height: 580px;
+    padding: 80px 0;
+
+    background-image: url(./../assets/img/header_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 769px) {
+      height: auto;
+      padding: 20px 0;
+    }
+
+    #slider_1 {
+      //display: none;
+      width: 555px;
+      height: 355px;
+      padding: 45px 40px;
+
+      background-color: $bgc_header;
+
+      @media screen and (max-width: 769px) {
+        padding: 20px;
+        width: auto;
+        height: auto;
+      }
+
+      .title {
+        margin-bottom: 35px;
+
+        font-size: 60px;
+        line-height: 60px;
+        font-family: 'CormorantInfant Bold', 'Arial', serif;
+
+        @media screen and (max-width: 769px) {
+          margin-bottom: 20px;
+
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+
+      .text {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: 'PTSang Regular', 'Arial', serif;
+
+        color: $color_text;
+
+        @media screen and (max-width: 769px) {
+          font-size: 10px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    #slider_2 {
+      display: none;
+      width: 555px;
+      height: 355px;
+      padding: 45px 40px;
+
+      background-color: $bgc_header;
+
+      .title {
+        margin-bottom: 35px;
+
+        font-size: 60px;
+        line-height: 60px;
+        font-family: 'CormorantInfamt Bold', 'Arial', serif;
+      }
+
+      .text {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: 'PTSang Regular', 'Arial', serif;
+
+        color: $color_text;
+      }
+    }
+
+    #slider_3 {
+      display: none;
+      width: 555px;
+      height: 355px;
+      padding: 45px 40px;
+
+      background-color: $bgc_header;
+
+      .title {
+        margin-bottom: 35px;
+
+        font-size: 60px;
+        line-height: 60px;
+        font-family: 'CormorantInfamt Bold', 'Arial', serif;
+      }
+
+      .text {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: 'PTSang Regular', 'Arial', serif;
+
+        color: $color_text;
+      }
+    }
+
+    #buttons {
+      margin: 30px 40px;
+
+      button {
+        width: 16px;
+        height: 16px;
+
+        background-image: url(./../assets/img/button.png);
+        outline: none;
+
+        &:hover {
+          background-image: url(./../assets/img/active_button.png);
+        }
+      }
+
+    }
+  }
+}

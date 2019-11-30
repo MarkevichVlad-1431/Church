@@ -1,0 +1,61 @@
+@import './variables.scss';
+@import './../helpers/fonts.scss';
+
+.banners{
+    height: 400px;
+    padding: 70px 0;
+
+    background-image: url(./../assets/img/bg_banners.jpg);
+    background-position: center;
+
+
+    @media screen and (max-width: 769px) {
+        height: auto;
+        padding: 30px;
+    }
+    
+    .block_1{
+        padding: 30px 35px; 
+
+        background-color: $bgc_header;
+
+        .title{
+            margin-bottom: 20px;
+
+            font-size: 24px;
+            line-height: 26px;
+            font-family: 'Cormorant SemiBoldItalic','Arial', serif;
+            color: #262626;
+
+        }
+
+        .facebook{
+            height: 150px;
+            background-image: url(./../assets/img/banner_facebook.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .block_2{
+        background-color: $bgc_header;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 769px) {
+            margin-top: 20px;
+            height: 256px;
+        }
+        
+        .title{
+            text-align: center;
+            font-size: 24px;
+            line-height: 26px;
+            font-family: 'Cormorant SemiBoldItalic','Arial', serif;
+            color: 262626
+        }
+    }
+}

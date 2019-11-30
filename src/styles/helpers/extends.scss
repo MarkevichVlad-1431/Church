@@ -1,0 +1,88 @@
+@import '../components/variables.scss';
+@import './fonts.scss';
+
+
+.leftPostExtend {
+  .time {
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'PTSans Regular', 'Arial', serif;
+
+    color: $color_time_liftPost;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 24px;
+    font-family: 'Cormorant SemiBoldItalic', 'Arial', serif;
+
+    color: $color_title_leftPost;
+  }
+
+  .text {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'PTSans Regular', 'Arial', serif;
+    color: $color_text_leftPost;
+  }
+
+  .link {
+    button {
+      padding: 20px 40px;
+      font-size: 14px;
+      line-height: 24px;
+      font-family: 'TPSans Bold', 'Arial', serif;
+      color: $color_button;
+
+      text-transform: uppercase;
+      border: 1px solid $color_button;
+      outline: none;
+
+      @media screen and (max-width: 576px) {
+        padding: 5px 10px;
+        font-size: 8px;
+      }
+    }
+  }
+}
+
+.itemExtend {
+  height: 380px;
+
+  @media screen and (max-width: 1200px) {
+    height: 420px;
+  }
+
+  .title {
+    padding: 15px 0;
+
+    font-size: 24px;
+    line-height: 26px;
+    font-family: 'Cormorant SemiBoldItalic', 'Arial', serif;
+
+    color: $color_title_leftPost;
+  }
+
+  .text {
+    height: 80px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'PTSans Regular', 'Arial', serif;
+    color: $color_text_leftPost;
+
+    overflow:hidden;
+  }
+
+  button {
+    margin-top: 20px;
+
+    font-size: 12px;
+    line-height: 24px;
+    font-family: 'PTSans Bold', 'Arial', serif;
+    color: $color_button;
+
+    text-transform: uppercase;
+  }
+}

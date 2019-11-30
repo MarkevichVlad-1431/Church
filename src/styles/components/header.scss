@@ -1,0 +1,100 @@
+@import './variables.scss';
+@import './../helpers/fonts.scss';
+
+header {
+  position: relative;
+  padding-top: 40px;
+
+  text-align: center;
+
+  background-color: $bgc_header;
+
+  @media screen and (max-width: 769px) {
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: 'CormorantInfant Bold', 'Arial', serif;
+    color: $color_text;
+
+    @media (min-width: 770px) and (max-width: 992px) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @media screen and (max-width: 769px) {
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  .tagline {
+    margin-bottom: 50px;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Cormorant LightItalic', 'Arial', serif;
+    color: $color_tagline;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 20px;
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+
+  .nav {
+    position: relative;
+
+    @media screen and (max-width: 769px) {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+
+    #menu {
+      display: none;
+
+      hr {
+        width: 20px;
+      }
+
+      @media screen and (max-width: 769px) {
+        position: absolute;
+        right: 0;
+
+        display: block;
+      }
+    }
+
+    .link {
+      padding: 15px;
+
+      @media screen and (max-width: 769px) {
+        text-align: right;
+        padding: 0;
+      }
+
+      a {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'TPSans Regular', 'Arial', serif;
+        color: $color_text;
+
+        text-transform: uppercase;
+
+        @media screen and (max-width: 992px) {
+          font-size: 10px;
+          line-height: 12px;
+        }
+
+        &:hover {
+          color: $color_navLink_active;
+        }
+      }
+    }
+  }
+}

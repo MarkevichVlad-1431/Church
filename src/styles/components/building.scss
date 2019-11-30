@@ -1,0 +1,62 @@
+@import "./variables.scss";
+@import './../helpers/fonts.scss';
+
+.building {
+  height: 560px;
+
+  background-image: url(./../assets/img/bg_building.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: 769px) {
+    height: 300px;
+  }
+
+  .buildInfo {
+    padding-top: 430px;
+
+    @media screen and (max-width: 769px) {
+      padding-top: 150px;
+    }
+
+    .text {
+      padding: 20px;
+      width: 210px;
+
+      font-size: 18px;
+      font-family: 'PTSans Regular', 'Arial', serif;
+      color: $color_title_leftPost;
+
+      background-color: $bgc_header;
+
+      @media screen and (max-width: 576px) {
+        padding: 10px;
+        width: 150px;
+
+        font-size: 12px;
+      }
+    }
+
+    button {
+      padding: 25px 35px;
+
+      font-size: 14px;
+      line-height: 24px;
+      font-family: 'PTSans Bold', 'Arial', serif;
+      color: $bgc_header;
+      text-transform: uppercase;
+
+      background-color: $color_button;
+
+      outline: none;
+
+      @media screen and (max-width: 576px) {
+        padding: 10px 15px;
+        width: 100px;
+
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import '../styles/helpers/normalize.scss';
+@import './common.scss';
+
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid';
+
+@import './components/header.scss';
+@import './components/slider.scss';
+@import './components/posts.scss';
+@import './components/building.scss';
+@import './components/banners.scss';
+@import './components/footer.scss';
