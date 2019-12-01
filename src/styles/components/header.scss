@@ -101,14 +101,10 @@ header {
           padding-left: 15px;
 
           font-size: 12px;
+          font-family: 'Cormorant LightItalic', 'Arial', serif;
           line-height: 12px;
           color: $bgc_header;
         }
-
-
-        font-family: 'Cormorant LightItalic',
-        'Arial',
-        serif;
 
         &:hover {
           color: $color_navLink_active;
