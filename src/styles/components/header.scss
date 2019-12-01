@@ -46,27 +46,29 @@ header {
     }
   }
 
-  .nav {
-    position: relative;
-
+  hr {
     @media screen and (max-width: 769px) {
-      position: absolute;
-      top: 20px;
-      right: 30px;
+      margin: 0;
+    }
+  }
+
+  .nav {
+    @media screen and (max-width: 579px) {
+      background-color: $color_text_leftPost;
     }
 
     #menu {
       display: none;
 
-      hr {
-        width: 20px;
-      }
-
-      @media screen and (max-width: 769px) {
-        position: absolute;
-        right: 0;
-
+      @media screen and (max-width: 579px) {
         display: block;
+        margin: auto;
+
+        color: $bgc_header;
+
+        font-family: 'CormorantInfant Bold', 'Arial', serif;
+        text-transform: uppercase;
+        outline: none;
       }
     }
 
@@ -74,7 +76,6 @@ header {
       padding: 15px;
 
       @media screen and (max-width: 769px) {
-        text-align: right;
         padding: 0;
       }
 
@@ -86,10 +87,28 @@ header {
 
         text-transform: uppercase;
 
-        @media screen and (max-width: 992px) {
-          font-size: 10px;
+        @media (min-width: 993px) and (max-width: 1200px) {
+          font-size: 14px;
+          line-height: 14px;
+        }
+
+        @media (min-width: 579px) and (max-width: 992px) {
+          font-size: 8px;
           line-height: 12px;
         }
+
+        @media screen and (max-width: 578px) {
+          padding-left: 15px;
+
+          font-size: 12px;
+          line-height: 12px;
+          color: $bgc_header;
+        }
+
+
+        font-family: 'Cormorant LightItalic',
+        'Arial',
+        serif;
 
         &:hover {
           color: $color_navLink_active;

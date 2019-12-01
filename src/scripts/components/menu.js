@@ -1,8 +1,9 @@
 let button = document.getElementById('menu');
-let ul = document.querySelector('.nav');
+let links = document.querySelectorAll('.nav >.link');
 let current = 0;
 
-console.log(ul);
+links.forEach((item) => { item.style.display = 'none'});
+
 button.onclick = function (event) {
   let target = event.target;
 
@@ -17,12 +18,10 @@ button.onclick = function (event) {
   }
 }
 
-function openMenu(elem) {
-  ul.classList.add('openMenu');
-  ul.classList.remove('closeMenu');
+function openMenu() {
+  links.forEach((item) => { item.style.display = 'block'});
 }
 
-function closeMenu(elem) {
-  ul.classList.add('closeMenu');
-  ul.classList.remove('openMenu');
+function closeMenu() {
+  links.forEach((item) => { item.style.display = 'none'});
 }

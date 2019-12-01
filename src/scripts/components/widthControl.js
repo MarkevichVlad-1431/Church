@@ -1,19 +1,14 @@
-const widthOutput = document.querySelector('#width');
+let links = document.querySelectorAll('.nav >.link');
 let ul = document.querySelector('.nav');
-
-if(document.documentElement.clientWidth < 769){
-   // ul.classList.add('closeMenu');
-}
 
 //catch width changes
 function resize() {
   let width = window.innerWidth;
 
-  if (width > '769') {
-    ul.classList.remove('openMenu');
-    ul.classList.remove('closeMenu');
+  if (width > '580') {
+    links.forEach((item) => { item.style.display = 'block'});
   } else{
-    ul.classList.add('closeMenu');
+    links.forEach((item) => { item.style.display = 'none'});
   }
 }
 
