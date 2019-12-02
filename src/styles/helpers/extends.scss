@@ -29,7 +29,8 @@
   }
 
   .link {
-    button {
+    .more {
+      display: inline-block;
       padding: 20px 40px;
       font-size: 14px;
       line-height: 24px;
@@ -41,8 +42,8 @@
       outline: none;
 
       @media screen and (max-width: 576px) {
-        padding: 5px 10px;
-        font-size: 8px;
+        padding: 5px;
+        font-size: 12px;
       }
     }
   }
@@ -67,17 +68,17 @@
 
   .text {
     height: 80px;
+    margin-bottom: 20px;
+
     font-size: 16px;
     line-height: 26px;
     font-family: 'PTSans Regular', 'Arial', serif;
     color: $color_text_leftPost;
 
-    overflow:hidden;
+    overflow: hidden;
   }
 
-  button {
-    margin-top: 20px;
-
+  a {
     font-size: 12px;
     line-height: 24px;
     font-family: 'PTSans Bold', 'Arial', serif;

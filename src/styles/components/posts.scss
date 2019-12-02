@@ -41,8 +41,9 @@
     }
 
     .lastNews {
+      display: inline-block;
       margin: 25px 0 70px 25px;
-      padding: 20px 50px;
+      padding: 20px 57px;
 
       font-size: 14px;
       line-height: 24px;
@@ -51,6 +52,13 @@
       color: #fff;
 
       background-color: #48974c;
+
+      @media screen and (max-width: 576px) {
+        padding: 5px 10px;
+        margin: 25px 20px;
+
+        font-size: 13px;
+      }
     }
   }
 
@@ -212,18 +220,24 @@
         margin: auto;
       }
 
-      button {
+      a {
+        display: inline-block;
         width: 55px;
         height: 55px;
 
         font-size: 15px;
-        line-height: 22px;
+        line-height: 55px;
+        text-align: center;
         font-family: 'PTSans Regular', 'Arial', serif;
 
         color: #262626;
 
         background-color: $bgc_header;
         outline: none;
+
+        @media screen and (max-width: 576px) {
+          line-height: 20px;
+        }
 
         &:hover {
           color: $bgc_header;

@@ -11,7 +11,7 @@ header {
 
   @media screen and (max-width: 769px) {
     padding-top: 20px;
-    text-align: left;
+    //text-align: left;
   }
 
   .title {
@@ -26,8 +26,8 @@ header {
     }
 
     @media screen and (max-width: 769px) {
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 16px;
+      line-height: 14px;
     }
   }
 
@@ -41,7 +41,7 @@ header {
 
     @media screen and (max-width: 992px) {
       margin-bottom: 20px;
-      font-size: 10px;
+      font-size: 14px;
       line-height: 16px;
     }
   }
@@ -72,42 +72,63 @@ header {
       }
     }
 
-    .link {
-      padding: 15px;
+    ul {
+      display: flex;
+      justify-content: space-between;
 
       @media screen and (max-width: 769px) {
-        padding: 0;
+        margin-bottom: 10px;
       }
 
-      a {
-        font-size: 16px;
-        line-height: 24px;
-        font-family: 'TPSans Regular', 'Arial', serif;
-        color: $color_text;
+      @media screen and (max-width: 580px) {
+        display: block;
+      }
 
-        text-transform: uppercase;
 
-        @media (min-width: 993px) and (max-width: 1200px) {
-          font-size: 14px;
-          line-height: 14px;
+      .link {
+        padding: 15px;
+        display: inline-block;
+
+        text-align: left;
+
+        @media screen and (max-width: 769px) {
+          padding: 0;
         }
 
-        @media (min-width: 579px) and (max-width: 992px) {
-          font-size: 8px;
-          line-height: 12px;
+        @media screen and (max-width: 580px) {
+          display: block;
         }
 
-        @media screen and (max-width: 578px) {
-          padding-left: 15px;
+        a {
+          font-size: 16px;
+          line-height: 24px;
+          font-family: 'TPSans Regular', 'Arial', serif;
+          color: $color_text;
 
-          font-size: 12px;
-          font-family: 'Cormorant LightItalic', 'Arial', serif;
-          line-height: 12px;
-          color: $bgc_header;
-        }
+          text-transform: uppercase;
 
-        &:hover {
-          color: $color_navLink_active;
+          @media (min-width: 993px) and (max-width: 1200px) {
+            font-size: 14px;
+            line-height: 14px;
+          }
+
+          @media (min-width: 579px) and (max-width: 992px) {
+            font-size: 8px;
+            line-height: 12px;
+          }
+
+          @media screen and (max-width: 580px) {
+            padding-left: 15px;
+
+            font-size: 12px;
+            font-family: 'Cormorant LightItalic', 'Arial', serif;
+            line-height: 12px;
+            color: $bgc_header;
+          }
+
+          &:hover {
+            color: $color_navLink_active;
+          }
         }
       }
     }
